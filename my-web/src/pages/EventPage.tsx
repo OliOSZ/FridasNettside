@@ -1,10 +1,11 @@
 import Navbar from "../components/Navbar";
 
-export function HomePage(){
+export function EventPage(){
     return (
         <>
             <Navbar/>
-            <h1>Overskrift for HomePage</h1>
+            <h1>Eventer</h1>
+            <p>Her er det eventer</p>
         </>
-    );
+    )
 }

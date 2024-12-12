@@ -3,18 +3,20 @@ import {
   Routes
 } from "react-router-dom";
 import './App.css'
-import { HomePage } from "./pages/HomePage";
+import { KursPage } from "./pages/KursPage";
 import { BlogPage } from "./pages/BlogPage";
 import Navbar from "./components/Navbar";
 import { FAQ } from "./pages/FAQ";
+import { EventPage } from "./pages/EventPage";
 
 function App() {
 
   return (
     <Routes>
       <Route path="/" element={<StartPage />}/>
-      <Route path="/HomePage" element={<HomePage />}/>
       <Route path="/BlogPage" element={<BlogPage />}/>
+      <Route path="/KursPage" element={<KursPage />}/>
+      <Route path="/EventPage" element={<EventPage />}/>
       <Route path="/FAQ" element={<FAQ />}/>
     </Routes>
   );
