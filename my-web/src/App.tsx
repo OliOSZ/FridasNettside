@@ -5,7 +5,7 @@ import {
 import './App.css'
 import { KursPage } from "./pages/KursPage";
 import { BlogPage } from "./pages/BlogPage";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/Navbar/Navbar";
 import { FAQ } from "./pages/FAQ";
 import { EventPage } from "./pages/EventPage";
 
