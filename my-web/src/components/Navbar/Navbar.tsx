@@ -1,26 +1,40 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "./Navbar.css"
 
 const Navbar = () => {
+const location = useLocation();
+
+
   return (
-    <nav>
-      <ul>
+    <nav className="Navbar">
+      <ul className="NavbarList">
         <li>
-          <Link className="NavbarLink" to="/">StartPage</Link>
+          <Link className={`NavbarLink ${location.pathname === "/" ? "active" : ""}`}
+            to="/">FriMedYoga</Link>
         </li>
         <li>
-          <Link className="NavbarLink" to="/BlogPage">Blog</Link>
+          <Link className={`NavbarLink ${location.pathname === "/BlogPage" ? "active" : ""}`}
+            to="/BlogPage">Blog</Link>
         </li>
         <li>
-          <Link className="NavbarLink" to="/KursPage">Kurs</Link>
+          <Link className={`NavbarLink ${location.pathname === "/KursPage" ? "active" : ""}`}
+            to="/KursPage">Kurs</Link>
         </li>
         <li>
-          <Link className="NavbarLink" to="/EventPage">Eventer</Link>
+          <Link className={`NavbarLink ${location.pathname === "/EventPage" ? "active" : ""}`}
+            to="/EventPage">Eventer</Link>
         </li>
 
         <li>
-          <Link className="NavbarLink" to="/FAQ">Kontakt</Link>
+          <Link  className={`NavbarLink ${location.pathname === "/FAQ" ? "active" : ""}`}
+            to="/FAQ">Kontakt</Link>
         </li>
+        <li>
+          <a href="https://www.facebook.com/FriMedYoga/" target="_blank">
+            <i className='bx bxl-facebook-square bx-md' id="facebookLogo"></i>
+          </a>
+        </li>
+        
       </ul>
     </nav>
   );
