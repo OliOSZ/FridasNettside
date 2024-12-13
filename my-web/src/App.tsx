@@ -26,6 +26,9 @@ function StartPage (){
   return (
     <>
     <Navbar/>
+    <img className="FridaYogaStartPage" src="../src\assets\lotusCropped.jpg" alt="" />
+    <h1>FriMedYoga</h1>
+    <h3>Frida's medesinkse yoga</h3>
     </>  
   )
 }
